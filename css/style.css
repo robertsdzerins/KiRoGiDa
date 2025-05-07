@@ -42,3 +42,16 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  margin-right: 10px;
+}
