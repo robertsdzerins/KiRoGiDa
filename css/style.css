@@ -19,8 +19,9 @@
 }
 
 body {
-  background-color: yellow;
+  background-color: #f5f7fa;
   line-height: 1.6;
+  color: white
 }
 /*headeris */
 header {
