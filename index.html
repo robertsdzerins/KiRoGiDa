@@ -2,7 +2,7 @@
 <html lang="lv">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KiRoGiDa WEB</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -15,21 +15,70 @@
           KiRoGiDa
         </a>
         <nav>
-      <ul>
-        <li><a href="#features">Iespējas</a></li>
-        <li><a href="#ai">Mākslīgais Intelekts</a></li>
-        <li><a href="#how-it-works">Kā tas darbojas</a></li>
-        <li><a href="#try-now">Izmēģini</a></li>
-        <li><a href="#contact">Kontakti</a></li>
-      </ul>
-    </nav>
-    <div class="auth-buttons">
-      <a href="#" class="btn btn-outline">Ieiet</a>
-      <a href="#" class="btn btn-primary">Reģistrēties</a>
-    </div>
+          <ul>
+            <li><a href="#features">Iespējas</a></li>
+            <li><a href="#ai">Mākslīgais Intelekts</a></li>
+            <li><a href="#how-it-works">Kā tas darbojas</a></li>
+            <li><a href="#try-now">Izmēģini</a></li>
+            <li><a href="#contact">Kontakti</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <a href="#" class="btn btn-outline" id="login-btn">Ieiet</a>
+          <a href="#" class="btn btn-primary" id="register-btn">Reģistrēties</a>
+        </div>
       </div>
     </header>
 
-    
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ieiet kontā</h2>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="login-email">E-pasts</label>
+            <input type="email" id="login-email" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Parole</label>
+            <input type="password" id="login-password" required>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Ieiet</button>
+            <a href="#" class="forgot-password">Aizmirsi paroli?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Reģistrēties</h2>
+        <form id="register-form">
+          <div class="form-group">
+            <label for="register-name">Vārds</label>
+            <input type="text" id="register-name" required>
+          </div>
+          <div class="form-group">
+            <label for="register-email">E-pasts</label>
+            <input type="email" id="register-email" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Parole</label>
+            <input type="password" id="register-password" required>
+          </div>
+          <div class="form-group">
+            <label for="register-confirm">Apstiprināt paroli</label>
+            <input type="password" id="register-confirm" required>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Reģistrēties</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/auth.js"></script>
   </body>
 </html>
