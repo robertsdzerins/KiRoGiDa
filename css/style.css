@@ -382,6 +382,147 @@ input[type="password"]:focus {
   color: var(--gray);
 }
 
+/*Ai sadala*/
+.ai-section {
+  background-color: var(--ai-color);
+  color: white;
+  padding: 80px 20px;
+}
+
+.ai-section {
+  background-color: var(--ai-color);
+  padding: 80px 20px;
+  color: white;
+}
+
+.ai-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.ai-content {
+  flex: 1 1 45%;
+}
+
+.ai-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.ai-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.ai-showcase {
+  flex: 1 1 50%;
+}
+
+.ai-card {
+  background-color: white;
+  color: #333;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  min-height: 450px;
+}
+
+/* Mirgojošais burbulis augšā */
+.ai-thinking {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background-color: #8e44ad;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.ai-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ai-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #ecf0f1;
+  color: #8e44ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  border-radius: 50%;
+}
+
+.ai-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.ai-status {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.ai-message {
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.ai-suggestion {
+  background-color: #ecf0f1;
+  border-left: 4px solid #8e44ad;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.ai-suggestion-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.ai-action {
+  display: flex;
+  gap: 10px;
+}
+
+.btn.btn-ai {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn.btn-ai:hover {
+  background-color: #732d91;
+}
+
+
+
 
 
 @media (max-width: 768px) {
