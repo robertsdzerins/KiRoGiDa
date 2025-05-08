@@ -16,15 +16,34 @@
         </div>
     </header>
 
-<section class="try-now">
-    <div class="try-now-content">
-        <h1>Izmēģini mūsu rīku</h1>
-        <p>Šeit drīzumā varēsiet pielāgot un plānot savu ideālo ceļojumu ar mākslīgā intelekta palīdzību.</p>
-        <p style="color: #aaa; font-style: italic;">(Šī sadaļa vēl ir izstrādes stadijā)</p>
+<section class="trip-form">
+    <div class="trip-form-content">
+        <h2>Izplāno savu ceļojumu</h2>
+        <form>
+            <label for="destination">Galamērķis:</label>
+            <input type="text" id="destination" name="destination" placeholder="Piemēram, Rīga">
+
+            <label for="start-date">Ierašanās datums:</label>
+            <input type="date" id="start-date" name="start-date">
+
+            <label for="end-date">Izbraukšanas datums:</label>
+            <input type="date" id="end-date" name="end-date">
+
+            <label for="interests">Tavas intereses:</label>
+            <select id="interests" name="interests" multiple>
+                <option value="museums">Muzeji</option>
+                <option value="food">Ēdiens</option>
+                <option value="nature">Daba</option>
+                <option value="architecture">Arhitektūra</option>
+                <option value="nightlife">Naktsdzīve</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary">Ģenerēt plānu</button>
+        </form>
         </div>
-    </section>
+</section>
+
 
 
 </body>
 </html>
-
