@@ -220,6 +220,170 @@ input[type="password"]:focus {
   text-decoration: underline;
 }
 
+/* pirma sadala ar izmeginiet tagad funkciju */
+.hero {
+  background-color: #3498db;
+  height: 80vh;
+  display: flex;
+  align-items: center;     /* vertikāli pa vidu */
+  justify-content: center; /* horizontāli pa vidu */
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-large {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Features sadaļa (2)*/
+
+.features {
+  background-color: #ecf0f1; 
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+.features p {
+  font-size: 1.1rem;
+  color: var(--gray);
+}
+/*kartiņas*/
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+/*Ka tas strada sadala*/
+.how-it-works {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.how-it-works-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--dark);
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.step {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background-color: #ecf0f1;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.step-number {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.step p {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+
+
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
@@ -242,13 +406,7 @@ input[type="password"]:focus {
     width: 95%;
     margin: 20% auto;
   }
-
-  /*Hero*/
-.hero {
-  background: linear-gradient(rgba(52, 152, 219, 0.8), rgba(41, 128, 185, 0.9));
-  height: 80vh; /* Pagaidu bloka augstums */
-}
-
-
+  
+  
   
 }
