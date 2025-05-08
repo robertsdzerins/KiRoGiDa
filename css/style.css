@@ -254,8 +254,9 @@ input[type="password"]:focus {
   justify-content: center;
   color: white;
   text-align: center;
-  padding-top: 70px; 
+  padding-top: 70px; /* lai nenoklājas ar header */
 }
+
 
 .hero-content {
   max-width: 800px;
