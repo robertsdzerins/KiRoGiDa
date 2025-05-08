@@ -543,28 +543,52 @@ input[type="password"]:focus {
 
 
 /*PLAN.html Sadala*/
-.try-now {
+.trip-form {
   background-color: #f5f7fa;
-  padding: 100px 20px;
-  text-align: center;
+  padding: 80px 20px;
   min-height: 80vh;
 }
 
-.try-now-content {
-  max-width: 800px;
+.trip-form-content {
+  max-width: 600px;
   margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.try-now h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.trip-form-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
   color: var(--primary);
 }
 
-.try-now p {
-  font-size: 1.1rem;
-  color: #555;
+form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  font-weight: bold;
 }
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form select[multiple] {
+  height: 100px;
+}
+
+form button {
+  margin-top: 30px;
+  width: 100%;
+}
+
 
 
 @media (max-width: 768px) {
