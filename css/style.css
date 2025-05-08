@@ -542,6 +542,29 @@ input[type="password"]:focus {
 }
 
 
+/*PLAN.html Sadala*/
+.try-now {
+  background-color: #f5f7fa;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.try-now-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.try-now h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.try-now p {
+  font-size: 1.1rem;
+  color: #555;
+}
 
 
 @media (max-width: 768px) {
