@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mans Profils – KiRoGiDa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="layout">
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <i class="fas fa-map-marked-alt"></i> KiRoGiDa
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html#features">Iespējas</a></li>
+          <li><a href="index.html#ai">Mākslīgais Intelekts</a></li>
+          <li><a href="index.html#how-it-works">Kā tas darbojas</a></li>
+          <li><a href="plan.html">Izmēģini</a></li>
+          <li><a href="index.html#contact">Kontakti</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="profile.html" class="btn btn-primary">Mans profils</a>
+        <a href="#" class="btn btn-primary" id="logout-btn">Iziet</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="profile"> 
+    <div class="profile-details">
+      <h1>----------------</h1>
+
+      <div class="profile-header">
+        <img src="profile-picture.png" alt="Profila bilde" class="profile-image">
+        <div class="profile-info">
+          <h2>Tava informācija</h2>
+          <p><strong>Vārds, Uzvārds:</strong> Jūsu Vārds, Uzvārds</p>
+          <p><strong>E-pasts:</strong> lietotajs@piemers.lv</p>
+          <p><strong>Ceļojumu skaits:</strong> 1</p>
+        </div>
+      </div>
+
+      <div class="profile-plans">
+        <h2>Mani ceļojuma plāni</h2>
+      <div class="travel-plan">
+        <p class="travel-info">📍 Rīga – 2025. gada 15. maijs - 18. maijs</p>
+        <div class="plan-buttons">
+          <a href="plan-riga.html" class="btn btn-outline btn-small">Skatīt sīkāk</a>
+          <a href="#" class="btn btn-danger btn-small delete-btn">Dzēst</a>
+        </div>
+      </div>
+        <div class="btn-center">
+          <a href="plan.html" class="btn btn-primary">Izveidot jaunu plānu</a>
+        </div>
+      </div>   
+    </div>
+  </main>
+
+  <div id="delete-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Esi veiksmīgi izdzēsis savu ceļojumu!</h2>
+    </div>
+  </div>
+
+  <div id="logout-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Esi veiksmīgi izgājis!</h2>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Sazinies ar mums: info@kirogida.lv</p>
+      <p class="authors">Darbu izstrādāja: Roberts Džeriņš, Kirils Matveičuks, Dāvis Klasons, Ģirts Sandis Muižarājs</p>
+    </div>
+  </footer>
+
+  <script src="js/profils.js"></script>
+</body>
+</html>
